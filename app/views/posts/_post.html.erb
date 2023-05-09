@@ -1,0 +1,13 @@
+<div id="<%= dom_id post %>">
+  <p>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </p>
+
+  <% if @post.image? %>
+    <p>
+      <%= image_tag @post.image.url %>
+    </p>
+  <% end %>
+
+</div>
