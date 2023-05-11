@@ -63,4 +63,8 @@ group :development do
   gem 'capistrano3-puma'
 end
 
+group :production do
+  gem 'unicorn', '5.4.1' # バージョン指定
+end
+
 gem "carrierwave", "~> 2.2"
